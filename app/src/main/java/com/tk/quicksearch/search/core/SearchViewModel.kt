@@ -1537,7 +1537,6 @@ class SearchViewModel(
                     query = newQuery,
                     searchResults = matches,
                     calculatorState = calculatorResult,
-                    webSuggestions = emptyList(),
                     detectedShortcutTarget = detectedTarget,
             )
         }

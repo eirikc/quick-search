@@ -44,13 +44,14 @@ class SecondarySearchOrchestrator(
             lastQueryWithNoSettings = null
             lastQueryWithNoAppShortcuts = null
             lastQueryLength = 0
-
+            webSuggestionHandler.cancelSuggestions()
             uiStateUpdater {
                 it.copy(
                     contactResults = emptyList(),
                     fileResults = emptyList(),
                     settingResults = emptyList(),
                     appShortcutResults = emptyList(),
+                    webSuggestions = emptyList(),
                 )
             }
             return
